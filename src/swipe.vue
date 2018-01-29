@@ -568,8 +568,8 @@
       element.addEventListener('touchend', this.dragEndEvent);
       // for pc
       element.addEventListener('mousedown', this.dragStartEvent);
-      element.addEventListener('mousemove', this.dragMoveEvent);
-      element.addEventListener('mouseup', this.dragEndEvent);
+      document.addEventListener('mousemove', this.dragMoveEvent);
+      document.addEventListener('mouseup', this.dragEndEvent);
     }
   };
 </script>
